@@ -45,3 +45,19 @@ function cambiaTema(ev){
     }
 }
 colorSwitch.addEventListener('change', cambiaTema);
+
+
+var toTop = $('#toTop');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    toTop.addClass('show');
+  } else {
+    toTop.removeClass('show');
+  }
+});
+
+toTop.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});

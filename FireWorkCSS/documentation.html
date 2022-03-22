@@ -22,8 +22,7 @@
                 <div style="color: #fff; margin: 1.2vh;" class="column7 al-l">
                     <a style="margin-left: 1.1vh;" href="mailto:contacto@firework.com"><i
                             class="fa-solid fa-envelope"></i> &nbsp;contacto@firework.com</a>
-                    <a style="margin-left: 4vh;" href="tel:+523311929289"><i class="fa-solid fa-phone"></i> &nbsp;+52 33
-                        1192 9289</a>
+                    <a style="margin-left: 4vh;" href="tel:+521234567890"><i class="fa-solid fa-phone"></i> &nbsp;+52 33 1122 3344</a>
                 </div>
                 <div class="column4 al-r">
                     <a style="margin-right: 2vh" href="javascript:alertae('Aún no contamos con redes sociales')"><i style="font-size: 19px"
@@ -38,12 +37,12 @@
         <nav class="menu">
             <div class="row">
                 <div class="column4 al-r">
-                    <a style="margin-right: 2vh;" href="/">
+                    <a style="margin-right: 2vh;" href="index.html">
                         <img class="circulo" src="assets/img/logo.png" alt="..." />
                     </a>
                 </div>
                 <div id="text2" class="column4 al-l">
-                    <a href="/">
+                    <a href="index.html">
                         <p class="textPrincipal" style="margin-top: 2.8vh;">
                             <font id="textNavBar" style="font-size: 40px;">FireWork C<font class="textTerciario">S</font><font class="textSecundario">S</font>
                             </font>
@@ -162,27 +161,38 @@
                         elementos que también hay que conocer.
                     </p>
                 </section>
-                <div class="center">
-                    <h1>Formulario ejemplo</h1>
-                    <form>
-                        <div class="inputbox">
-                            <input type="text" required="required">
-                            <span>Email</span>
-                        </div>
-                        <div class="inputbox">
-                            <input type="text" required="required">
-                            <span>Password</span>
-                        </div>
-                        <div class="inputbox">
-                            <input type="button" value="submit">
-                        </div>
+                <section style="border-top: 0 !important;" class="uno">
+                    <h2>Ejemplo Formulario</h2>
+                    <form class="contact100-form validate-form">
+                    
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+                    <span class="label-input100">Nombre(s)</span>
+                    <input class="input100" type="text" name="name" placeholder="Escribe aquí tu nombre...">
+                    <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <span class="label-input100">Correo Electrónico</span>
+                    <input class="input100" type="text" name="email" placeholder="Escribe aquí tu correo electrónico...">
+                    <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Message is required">
+                    <span class="label-input100">Mensaje</span>
+                    <textarea class="input100" name="message" placeholder="Escribe aquí tu mensaje..."></textarea>
+                    <span class="focus-input100"></span>
+                    </div>
                     </form>
-                </div>
+                    <button class="contact100-form-btn" onclick="alertae('Aún no contamos con esta función. ¡Envíanos un correo electrónico!')">
+                    <span>
+                    Enviar
+                    <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                    </span>
+                    </button>
+                </section>
         </div>
     </main>
     <footer class="contact">
         <p>
-            <a href="/">
+            <a href="index.html">
                 <img class="circulo" src="assets/img/logo.png" alt="..." />
             </a>
         </p>
@@ -216,6 +226,7 @@
         <p><a href="downloads.html">Descargas</a></p>
         <p class="active2"><a href="documentation.html">Documentación</a></p>
     </div>
+    <a id="toTop"></a>
     <script src="assets/js/jquery-3.6.0.js"></script>
     <script src="assets/js/sweetalert2.all.js"></script>
     <script src="assets/js/script.js"></script>
