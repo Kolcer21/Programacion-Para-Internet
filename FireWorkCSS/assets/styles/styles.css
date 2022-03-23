@@ -901,6 +901,7 @@ z-index: 99999;
   }
   .center .inputbox:last-child {
 	margin-bottom: 0;
+    padding: 7px;
   }
   .center .inputbox span {
 	position: absolute;
