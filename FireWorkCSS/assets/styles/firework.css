@@ -1,31 +1,88 @@
 @font-face {
     font-family: "Comfortaa";
-    src: url("../fonts/static/Comfortaa-SemiBold.ttf");
+    src: url("Comfortaa-SemiBold.ttf");
 }
 :root{
     --naranjaOs: #EE6325;
     --amarillo: #FBE824;
     --naranjaCla: #FA961C;
 }
+/* Titulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa';
+}
+/* Fonts */
+.txt-Comfortaa{
+    font-family: 'Comfortaa';
+}
+/* Definir color */
+.txt-naranjaOs{
+    color: var(--naranjaOs);
+}
+.txt-amarillo{
+    color: var(--amarillo);
+}
+.txt-naranjaCla{
+    color: var(--naranjaCla);
+}
+/* Fondo */
+.bg-naranjaOs{
+    background-color: var(--naranjaOs);
+}
+.bg-amarillo{
+    background-color: var(--amarillo);
+}
+.bg-naranjaCla{
+    background-color: var(--naranjaCla);
+}
 /* Botones */
+button{
+    font-family: "Comfortaa";
+    font-size: 1.3em;
+}
 .btn-naranjaOs{
     background-color: var(--naranjaOs);
-    box-shadow: 2px 2px orange;
 }
 .btn-amarillo{
     background-color: var(--amarillo);
-    box-shadow: 2px 2px yellow;
 }
 .btn-naranjaCla{
     background-color: var(--naranjaCla);
-    box-shadow: 2px 2px orange;
+}
+.btn-borderNaranjaOs{
+    background-color: white;
+    border: 2px solid var(--naranjaOs);
+}
+.btn-borderAmarillo{
+    background-color: white;
+    border: 2px solid var(--amarillo);
+}
+.btn-borderNaranjaCla{
+    background-color: white;
+    border: 2px solid var(--naranjaCla);
 }
 .btn-redondeo{
     border-radius: 100px;
 }
-button[class^='btn-']:hover{
-    box-shadow: inset 0 0 20px wheat, 0 0 20px wheat;
+.btn-shadowNaranjaOs{
+    box-shadow: 2px 2px var(--naranjaOs);
 }
+.btn-shadowAmarillo{
+    box-shadow: 2px 2px var(--amarillo);
+}
+.btn-shadowNaranjaCla{
+    box-shadow: 2px 2px var(--naranjaCla);
+}
+.btn-hoverBlanco:hover{
+    box-shadow: inset 0 0 20px white, 0 0 20px white;
+}
+.btn-botonesHorizontales{
+    float: left;
+}
+.btn-botonesVerticales{
+    display: block;
+}
+
 /* Definir anchura*/
 .wi-10{
     width: 10vw;
@@ -48,6 +105,7 @@ button[class^='btn-']:hover{
 .wi-100{
     width: 100vw;
 }
+
 /* Padding */
 .pad-2{
     padding: 2px;
@@ -57,4 +115,128 @@ button[class^='btn-']:hover{
 }
 .pad-7{
     padding: 7px;
+}
+.pad-10{
+    padding: 10px;
+}
+/* Margin */
+.mar-2{
+    margin: 2px;
+}
+.mar-5{
+    margin: 5px;
+}
+.mar-7{
+    margin: 7px;
+}
+.mar-10{
+    margin: 10px;
+}
+/* FORMULARIOS */
+/* Input */
+input{
+    border: none;
+    font-family: "Comfortaa";
+}
+input:focus{
+    border: none;
+}
+.inp-naranjaOs{
+    border: 2px solid var(--naranjaOs);
+}
+.inp-amarillo{
+    border: 2px solid var(--amarillo);
+}
+.inp-naranjaCla{
+    border: 2px solid var(--naranjaCla);
+}
+.inp-naranjaOs:focus{
+    border: 3px solid var(--naranjaOs);
+    background-color: gainsboro;
+}
+.inp-amarillo:focus{
+    border: 3px solid var(--amarillo);
+    background-color: gainsboro;
+}
+.inp-naranjaCla:focus{
+    border: 3px solid var(--naranjaCla);
+    background-color: gainsboro;
+}
+.inp-group>input{
+    display: inline-block;
+}
+
+/* Etiquetas */
+.eti-lado{
+    display: inline-block;
+    vertical-align: baseline;
+    font-family: "Comfortaa";
+}
+.eti-arriba{
+    display: block;
+    vertical-align: baseline;
+    font-family: "Comfortaa";
+}
+/* CheckBox */
+.chb-div, rad-div{
+    cursor: pointer;
+    display: block;
+    font-family: "Comfortaa";
+}
+.chbox, .rad{
+    display: block;
+    cursor: pointer;
+}
+.chbox-hor, .rad-hor{
+    display: block;
+    cursor: pointer;
+}
+.btn-check{
+    display: block;
+    position: relative;
+    border: 1px solid black;
+}
+.btn-radio{
+    display: inline-block;
+    position: relative;
+    float: left;
+    border: 1px solid black;
+}
+.btn-check:hover, .btn-radio:hover{
+    background-color: wheat;
+}
+/* Label */
+.label{
+    font-family: "Comfortaa";
+}
+.label::after{
+    content: " :";
+}
+/* Link */
+.a-linkNaranjaOs{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: var(--naranjaOs);
+}
+.a-linkNaranjaCla{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: var(--naranjaCla);
+}
+.a-linkAmarillo{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: var(--amarillo);
+}
+.a-linkNaranjaOsSub{
+    text-decoration: underline var(--naranjaOs);
+    letter-spacing: 2px;
+}
+.a-linkNaranjaClaSub{
+    text-decoration: underline var(--naranjaCla);
+    letter-spacing: 2px;
+}
+.a-linkAmarilloSub{
+    text-decoration: underline var(--amarillo);
+    letter-spacing: 2px;
 }
