@@ -929,11 +929,11 @@ z-index: 99999;
   	color: #fff;
   } 
 
-
+/*
 .icon i{
 	color: var(--principal);
 }
-
+*/
 
 .card {
   display: flex;
