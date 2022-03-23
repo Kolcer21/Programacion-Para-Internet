@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url("../fonts/static/Comfortaa-SemiBold.ttf");
+}
+:root{
+    --naranjaOs: #EE6325;
+    --amarillo: #FBE824;
+    --naranjaCla: #FA961C;
+}
+/* Botones */
+.btn-naranjaOs{
+    background-color: var(--naranjaOs);
+    box-shadow: 2px 2px orange;
+}
+.btn-amarillo{
+    background-color: var(--amarillo);
+    box-shadow: 2px 2px yellow;
+}
+.btn-naranjaCla{
+    background-color: var(--naranjaCla);
+    box-shadow: 2px 2px orange;
+}
+.btn-redondeo{
+    border-radius: 100px;
+}
+button[class^='btn-']:hover{
+    box-shadow: inset 0 0 20px wheat, 0 0 20px wheat;
+}
+/* Definir anchura*/
+.wi-10{
+    width: 10vw;
+}
+.wi-20{
+    width: 20vw;
+}
+.wi-40{
+    width: 40vw;
+}
+.wi-60{
+    width: 60vw;
+}
+.wi-80{
+    width: 80vw;
+}
+.wi-90{
+    width: 90vw;
+}
+.wi-100{
+    width: 100vw;
+}
+/* Padding */
+.pad-2{
+    padding: 2px;
+}
+.pad-5{
+    padding: 5px;
+}
+.pad-7{
+    padding: 7px;
+}
